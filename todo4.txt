@@ -1,0 +1,16 @@
+Todo Penality 
+Base:
+	-Update Prevision date depart X
+	-Creer table Penalite(id,min,max,unite,devise,solde) X
+	-Create view durrePrevision X
+Affichage:
+	-PRvision ajout insert date depart X
+	-ajout date depart sur liste prevision X
+Metier:
+	-Create Classe Penalite
+	- getPenalite
+	-f* calcul durre en min entre 2 date
+	-f* Total montant sur penalite
+		/TotalPenalite(idprev)
+			/getEvenement(idprev)
+			

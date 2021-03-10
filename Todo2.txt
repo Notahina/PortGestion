@@ -1,0 +1,23 @@
+Todlist:
+Base:
+-Update table Quiai(iDquai,Tonnage,Profondeur,montant,devise)
+-Creee table Change(id,Type,date,montant) 
+-Evenement (ID,Idprev,IQuai,DateA,DateD NULL)
+Affichage:
+-Sasie Changes
+-Saise evenement-Quai/DateArrvie/heure arrive
+		-Quai/Date Depart/heur depart  bouton Valider
+-Liste Escale par prevision 
+Metier:
+** Change:-Insert Change;
+		-select * from where date=<datenow group by date limit 1;
+**Evenement: 
+	Controlle :-Date Depart	/DateA<DateP X
+				/DateA<DateD[i-1] X
+				/Quai occupue am dateA X
+		   -Date Arrive	/DateD<DateA X
+				/exist date arrive  ??
+
+**Escalle:
+	
+20:02>19:02

@@ -1,0 +1,39 @@
+Todo
+-Base Creer table Facture
+-Classe Facture	-idfact idprev -idevenet -idquai -devise -total -durrer -surpoid 
+Facture[] escale(Evenement[])
+	for(i ;event ...)
+//////////////////////////////////////////////////////////////////////////////////////////
+Todo Plafond
+Base-
+-Quai(Idquai,Prof,Nbre)
+-QuaiTarfi(Id,Idquai,durre,montant,Devise)
+Metier 
+Classes Tarifs=
+	-getTarifsEscalle(Evenement[] event)
+		maka liste quaidetails
+		creer liste Tarifs
+		boucle event 
+			maka quaidetaila par par raport idquai event mahazo QuaiDetail[] 
+			alaina durre le event  DateD - DateA en min
+			Tarifs tarif=new
+			bouble quaidetail
+				
+				if(durre>=quaidetail[i+1].Durre || durre<quaidetail[i+1].Durre )
+					if(i==0)
+						temps=quaidetail[i+1].Durre
+						montant=quaidetail[i].Montant
+						tempsquai=quaidetail[i].Durre
+						use fonction tantque(tempsquai,temps,montant)
+						if(durre<quaidetail[i+1].Durre) break;
+					else 
+						tarif.montant= tarif.Montatnt+durre>=quaidetail[i].Montant
+						if(durre<quaidetail[i+1].Durre) break;
+				if((i+1==quaidetail.Length)
+					if(durre>quaidetail[i+1].Durre)
+						reste=duree-quaidetail[i+1].Durre
+						reste=reste*quaidetail[i].Montant
+						tarif.montant=tarif.montant+reste
+				liste.Add(tarifs)
+
+		
